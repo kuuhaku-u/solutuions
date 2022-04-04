@@ -1,24 +1,24 @@
-def edit_distance(string1, string2):
-    """Ref: https://bit.ly/2Pf4a6Z"""
+def difference(string1, string2):
+
 
     if len(string1) > len(string2):
-        difference = len(string1) - len(string2)
-        string1[:difference]
+        diff = len(string1) - len(string2)
+        string1[:diff]
 
     elif len(string2) > len(string1):
-        difference = len(string2) - len(string1)
-        string2[:difference]
+        diff = len(string2) - len(string1)
+        string2[:diff]
 
     else:
-        difference = 0
+        diff = 0
 
     for i in range(len(string1)):
         if string1[i] != string2[i]:
-            difference += 1
+            diff += 1
 
-    return difference
+    return diff
 
 
 if __name__=="__main__":
-    print(edit_distance("kitten", "sitting")) #3
-    print(edit_distance("medium", "median")) #2
+    print(difference("Quantom", "Quantum")) 
+    

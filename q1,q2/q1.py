@@ -22,9 +22,14 @@ def findMin(arr, low, high):
     return findMin(arr, mid+1, high)
  
 if __name__=="__main__":
+    #test case 001
     arr1 = [5, 6, 1, 2, 3, 4]
     n1 = len(arr1)
     print("The minimum element is " + str(findMin(arr1, 0, n1-1)))
  
+    #test case002
+    arr1 = [1, 2, 3, 4]
+    n1 = len(arr1)
+    print("The minimum element is " + str(findMin(arr1, 0, n1-1)))
 
  
